@@ -1,0 +1,27 @@
+# LangGraph e LangChain (multi-agente)
+langgraph
+langchain
+langchain-groq
+langchain-community
+
+# RAG e vetores
+qdrant-client
+langchain-qdrant
+
+# Banco de dados estruturado
+psycopg[binary]
+sqlalchemy
+
+# Reranking (Semana 2)
+cohere
+
+# Utilidades
+python-dotenv
+pydantic
+
+# Frontend (deixa já instalado)
+streamlit
+
+# Notebooks (pros exercícios)
+jupyter
+ipykernel
