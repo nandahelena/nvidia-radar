@@ -12,7 +12,7 @@ import time
 
 def fetch_text(url, timeout=15):
     """
-    Baixa uma URL e extrai só o texto principal, sem ruído de HTML.
+    Baixa uma URL e extrai só o texto principal, sem HTML.
     Retorna string com o conteúdo, ou uma mensagem de erro se falhar.
     """
     headers = {

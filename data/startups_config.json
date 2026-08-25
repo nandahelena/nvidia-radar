@@ -1,5 +1,5 @@
 [
-  {
+    {
     "nome": "Maritaca AI",
     "site": "https://maritaca.ai",
     "setor": "Infraestrutura de IA",
@@ -10,11 +10,11 @@
     "tamanho_time": 20,
     "classificacao_esperada": "AI-native",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Introdução ao Sabiá", "url": "https://docs.maritaca.ai/pt/introducao", "data_publicacao": "2024-01-01"},
-      {"tipo": "blog técnico", "titulo": "Anúncio do Sabiá-4", "url": "https://www.maritaca.ai/post/sabia-4", "data_publicacao": "2026-01-19"},
-      {"tipo": "notícia", "titulo": "Maritaca AI lança Sabiá-4 Thinking", "url": "https://www.alura.com.br/artigos/maritaca-ai-lanca-sabia-4-thinking-modelo-raciocinio-brasileiro", "data_publicacao": "2026-07-24"}
+        {"tipo": "site institucional", "titulo": "Introdução ao Sabiá", "url": "https://docs.maritaca.ai/pt/introducao", "data_publicacao": "2024-01-01"},
+        {"tipo": "documentação técnica", "titulo": "Modelos disponíveis - Maritaca", "url": "https://docs.maritaca.ai/pt/modelos", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Maritaca AI lança Sabiá-4 Thinking", "url": "https://www.alura.com.br/artigos/maritaca-ai-lanca-sabia-4-thinking-modelo-raciocinio-brasileiro", "data_publicacao": "2026-07-24"}
     ]
-  },
+    },
   {
     "nome": "Enter",
     "site": "https://www.getenter.ai",
@@ -31,7 +31,7 @@
       {"tipo": "notícia", "titulo": "Enter vira primeiro unicórnio de IA da América Latina", "url": "https://www.infomoney.com.br/mercados/startups-quem-e-a-enter-unicornio-brasileiro-de-ia-do-setor-juridico/", "data_publicacao": "2026-05-07"}
     ]
   },
-  {
+    {
     "nome": "Kunumi",
     "site": "https://kunumi.com",
     "setor": "Saúde e Educação (IA aplicada)",
@@ -42,12 +42,12 @@
     "tamanho_time": 80,
     "classificacao_esperada": "AI-native",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Kunumi - Home", "url": "https://kunumi.com/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Kunumi - Sobre", "url": "https://kunumi.com/about/", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "Kunumi no ranking de startups de IA", "url": "https://beanalytic.com.br/blog/startups-de-inteligencia-artificial/", "data_publicacao": "2026-06-25"}
+        {"tipo": "site institucional", "titulo": "Kunumi é vendida ao Grupo Bradesco e consolida caso de sucesso por meio de parceria entre a spin-off e a UFMG ", "url": "https://fundepar.com.br/kunumi-e-vendida-ao-grupo-bradesco-e-consolida-caso-de-sucesso-por-meio-de-parceria-entre-a-spin-off-e-a-ufmg/", "data_publicacao": null},
+        {"tipo": "perfil externo", "titulo": "Como é empreender, aos 71 anos, com inteligência artificial? O fundador da Kunumi conta essa história", "url": "https://www.projetodraft.com/o-futuro-hibrido-da-kunumi-e-feito-de-gente-maquinas-inteligentes-e-lucro-com-responsabilidade/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Kunumi no ranking das principais startups de IA no Brasil", "url": "https://beanalytic.com.br/blog/startups-de-inteligencia-artificial/", "data_publicacao": "2026-06-25"}
     ]
-  },
-  {
+    },
+    {
     "nome": "Take Blip",
     "site": "https://www.take.net",
     "setor": "Comunicação corporativa",
@@ -58,12 +58,12 @@
     "tamanho_time": 1000,
     "classificacao_esperada": "AI-enabled",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Take Blip - Home", "url": "https://www.take.net/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Take Blip - Sobre", "url": "https://www.take.net/sobre-a-take/", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "Take Blip - startup AI-First", "url": "https://businessmoment.com.br/8-startups-brasileiras-de-inteligencia-artificial-para-acompanhar-em-2026/", "data_publicacao": "2025-10-13"}
+        {"tipo": "site institucional", "titulo": "Take Blip - Home", "url": "https://www.take.net/", "data_publicacao": null},
+        {"tipo": "perfil externo", "titulo": "Take Blip - LinkedIn", "url": "https://br.linkedin.com/company/take", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Take Blip entre startups brasileiras de IA para 2026", "url": "https://businessmoment.com.br/8-startups-brasileiras-de-inteligencia-artificial-para-acompanhar-em-2026/", "data_publicacao": "2025-10-13"}
     ]
-  },
-  {
+    },
+    {
     "nome": "Tractian",
     "site": "https://tractian.com",
     "setor": "Indústria (IoT + Manutenção Preditiva)",
@@ -74,11 +74,11 @@
     "tamanho_time": 500,
     "classificacao_esperada": "AI-enabled",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Tractian - Home Brasil", "url": "https://tractian.com/br", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Tractian - Sobre", "url": "https://tractian.com/br/sobre", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "BNDES aprova R$120mi para Tractian", "url": "https://businessmoment.com.br/8-startups-brasileiras-de-inteligencia-artificial-para-acompanhar-em-2026/", "data_publicacao": "2025-10-13"}
+        {"tipo": "site institucional", "titulo": "Sensor nº 1 em Monitoramento de Vibração e Ultrassom", "url": "https://get.tractian.com/cbm/sensor-vibracao-industrial?utm_campaign_id=12662878059&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CSEM%7CSA-BR%7CBRD%7CSTD-Tractian%7CALL&utm_term=tractian_e&utm_content=731759303940&hsa_acc=1812744788&hsa_cam=12662878059&hsa_grp=117619208062&hsa_ad=731759303940&hsa_src=g&hsa_tgt=kwd-900178865756&hsa_kw=tractian&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=12662878059&gclid=CjwKCAjw-rTUBhAiEiwADv8gBLA1d5SvbwCKrvqvHMbvRxwLiiNtoYiiTKH10d2hdTk4Q0_nhkD6dxoCddMQAvD_BwE", "data_publicacao": null},
+        {"tipo": "blog técnico", "titulo": "O papel da IoT na gestão da manutenção", "url": "https://tractian.com/blog/sistema-iot-para-gestao-da-manutencao", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Tractian capta US$ 120 mi em Série C", "url": "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-tractian-de-iot-para-maquinas-industriais-capta-us-120-mi/", "data_publicacao": "2024-12-28"}
     ]
-  },
+    },
   {
     "nome": "Neofin",
     "site": "https://neofin.com.br",
@@ -95,7 +95,7 @@
       {"tipo": "notícia", "titulo": "Neofin capta R$35mi em rodada seed", "url": "https://exame.com/revista-exame/ia-tipo-exportacao/", "data_publicacao": "2026-06-26"}
     ]
   },
-  {
+    {
     "nome": "Loft",
     "site": "https://loft.com.br",
     "setor": "Proptech (Imobiliário)",
@@ -106,44 +106,44 @@
     "tamanho_time": 1500,
     "classificacao_esperada": "AI-enabled",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Loft - Home", "url": "https://loft.com.br/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Loft - Quem Somos", "url": "https://loft.com.br/quem-somos", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "Como a Loft se tornou uma das startups mais valiosas do mundo", "url": "https://exame.com/revista-exame/do-zero-aos-doze-bilhoes/", "data_publicacao": "2021-04-22"}
+        {"tipo": "perfil externo", "titulo": "Loft Brasil Tecnologia - Wikipedia", "url": "https://pt.wikipedia.org/wiki/Loft_Brasil_Tecnologia", "data_publicacao": "2026-04-24"},
+        {"tipo": "notícia", "titulo": "Loft redefine estratégia com foco em IA", "url": "https://www.bloomberglinea.com.br/tech/com-foco-em-ia-loft-redefine-estrategia-e-busca-eficiencia-no-mercado-imobiliario/", "data_publicacao": "2025-10-21"},
+        {"tipo": "notícia", "titulo": "Como a Loft se tornou uma das startups mais valiosas do mundo", "url": "https://exame.com/revista-exame/do-zero-aos-doze-bilhoes/", "data_publicacao": "2021-04-22"}
     ]
-  },
-  {
+    },
+    {
     "nome": "Loggi",
     "site": "https://www.loggi.com",
     "setor": "Logística",
     "estagio": "unicórnio",
     "localizacao": "São Paulo, SP",
-    "descricao_curta": "Empresa de logística de última milha e entregas de encomendas, com atuação em todo o território nacional.",
+    "descricao_curta": "Empresa de logística de última milha que tem incorporado IA generativa (arquitetura multi-agente) no atendimento e roteirização.",
     "ano_fundacao": 2013,
     "tamanho_time": 3000,
-    "classificacao_esperada": "non-AI",
+    "classificacao_esperada": "AI-enabled",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Loggi - Home", "url": "https://www.loggi.com/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Loggi - Sobre", "url": "https://www.loggi.com/sobre/", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "Loggi na lista de unicórnios brasileiros", "url": "https://www.distrito.me/blog/lista-dos-unicornios-brasileiros", "data_publicacao": "2026-05-20"}
+        {"tipo": "site institucional", "titulo": "Loggi - Home", "url": "https://www.loggi.com/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Loggi lança canal de atendimento com IA generativa", "url": "https://mundologistica.com.br/noticias/loggi-lanca-canal-de-atendimento-com-ia-na-logistica", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Loggi aposta em IA para escalar logística na Black Friday", "url": "https://itforum.com.br/noticias/loggi-ia-escalar-logistica-nacional-black-friday/", "data_publicacao": "2025-11-26"}
     ]
-  },
-  {
+    },
+    {
     "nome": "MadeiraMadeira",
     "site": "https://www.madeiramadeira.com.br",
     "setor": "E-commerce (Móveis e Decoração)",
     "estagio": "unicórnio",
     "localizacao": "Curitiba, PR",
-    "descricao_curta": "Marketplace de móveis e decoração com mais de 2 milhões de produtos no portfólio.",
+    "descricao_curta": "Marketplace de móveis e decoração com mais de 3 milhões de produtos no portfólio, unicórnio brasileiro desde 2021.",
     "ano_fundacao": 2009,
     "tamanho_time": 2000,
     "classificacao_esperada": "non-AI",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "MadeiraMadeira - Home", "url": "https://www.madeiramadeira.com.br/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "MadeiraMadeira - Institucional", "url": "https://www.madeiramadeira.com.br/institucional", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "MadeiraMadeira entre os unicórnios brasileiros", "url": "https://www.distrito.me/blog/lista-dos-unicornios-brasileiros", "data_publicacao": "2026-05-20"}
+        {"tipo": "notícia", "titulo": "MadeiraMadeira vira unicórnio com aporte de US$190mi", "url": "https://exame.com/pme/novo-unicornio-brasileiro-madeiramadeira-aporte-190-milhoes/", "data_publicacao": "2021-01-08"},
+        {"tipo": "notícia", "titulo": "MadeiraMadeira ajusta estratégia e mira IPO", "url": "https://startups.com.br/negocios/madeiramadeira-ajusta-estrategia-mira-eficiencia-e-arruma-a-casa-para-ipo/", "data_publicacao": "2025-04-16"},
+        {"tipo": "notícia", "titulo": "MadeiraMadeira aposta em cashback para vender", "url": "https://exame.com/negocios/madeiramadeira-cashback-ipo-vendas-produtos/", "data_publicacao": "2025-07-23"}
     ]
-  },
-  {
+    },
+    {
     "nome": "Conta Azul",
     "site": "https://contaazul.com",
     "setor": "SaaS de Gestão para PMEs",
@@ -154,9 +154,9 @@
     "tamanho_time": 400,
     "classificacao_esperada": "non-AI",
     "documentos_urls": [
-      {"tipo": "site institucional", "titulo": "Conta Azul - Home", "url": "https://contaazul.com/", "data_publicacao": null},
-      {"tipo": "site institucional", "titulo": "Conta Azul - Sobre", "url": "https://contaazul.com/institucional/", "data_publicacao": null},
-      {"tipo": "notícia", "titulo": "Conta Azul entre startups brasileiras promissoras", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"}
+        {"tipo": "site institucional", "titulo": "Conta Azul - Home", "url": "https://contaazul.com/", "data_publicacao": null},
+        {"tipo": "blog institucional", "titulo": "Conta Azul - Blog", "url": "https://contaazul.com/blog/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Conta Azul entre startups brasileiras promissoras", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"}
     ]
-  }
+    }
 ]
