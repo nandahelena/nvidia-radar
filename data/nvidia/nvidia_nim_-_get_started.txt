@@ -1,0 +1,59 @@
+PRODUTO: NVIDIA NIM - Get Started
+CATEGORIA: deploy de modelos
+URL_FONTE: https://docs.nvidia.com/nim/large-language-models/latest/get-started/index.html
+---
+About Get Started with NIM LLM — NVIDIA NIM for Large Language Models
+Skip to main content
+Back to top
+Ctrl
++
+K
+📢
+Notice:
+NIM LLM 3.0
+is now available alongside NIM LLM 2.0. Consider 3.0 for workloads that depend on Dynamo-based distributed inference with independently scaled workers.
+NVIDIA NIM for Large Language Models
+Choose version
+Documentation Home
+Is this page helpful?
+About Get Started with NIM LLM
+#
+Use the following resources to set up your environment, pull the container, and run your first model.
+Try a Hosted Model
+#
+Before deploying a model locally, try a NIM API (such as
+llama-3.3-70b-instruct
+) at
+build.nvidia.com
+to get a feel for the API and model capabilities.
+Next Steps
+#
+Prerequisites
+Hardware, software, driver, and container runtime requirements for deploying NIM LLM containers.
+how-to
+Prerequisites
+Installation
+Instructions for configuring network and authentication, logging into Docker, and pulling the NIM container image.
+how-to
+Installation
+Configuration
+Configure your local cache and advanced settings to customize your NIM LLM deployment.
+how-to
+Configuration
+Quickstart
+Step-by-step instructions for deploying model-specific and model-free NIM containers and running inference.
+how-to
+Quickstart
+Advanced
+Model-specific guides for NIM deployments that require additional setup.
+how-to
+Advanced
+Support Matrix
+Supported models, profiles, and hardware platforms for the latest release.
+reference
+Support Matrix for NIMs
+Release Notes
+New features, bug fixes, and known issues for the current release.
+reference
+Release Notes
+On this page

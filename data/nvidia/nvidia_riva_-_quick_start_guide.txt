@@ -1,0 +1,127 @@
+PRODUTO: NVIDIA Riva - Quick Start Guide
+CATEGORIA: voz (ASR/TTS)
+URL_FONTE: https://docs.nvidia.com/deeplearning/riva/user-guide/docs/quick-start-guide.html
+---
+Quick Start Guide — NVIDIA Riva
+Toggle navigation sidebar
+Toggle in-page Table of Contents
+NVIDIA Riva
+Contents
+Quick Start Guide
+Contents
+Quick Start Guide
+#
+Important
+The Riva SDK release only supports embedded (L4T) platforms. For x86 data center deployments, refer to
+Riva ASR NIM
+,
+Riva TTS NIM
+, and
+Riva NMT NIM
+documentation.
+This is the starting point to try out Riva. Specifically, this Quick Start Guide enables you to deploy pretrained models on a local workstation and run a sample client.
+Riva Speech AI Skills supports one architecture, Linux ARM64. This is referred to as
+embedded
+(ARM64) throughout this documentation.
+For more information and questions, visit the
+NVIDIA Riva Developer Forum
+.
+Note
+Riva embedded (ARM64) is in
+public beta
+.
+Prerequisites
+#
+Before using Riva Speech AI, ensure you meet the following prerequisites:
+You have access and are logged into NVIDIA NGC. For step-by-step instructions, refer to the
+NGC Getting Started Guide
+.
+You have access to an NVIDIA Jetson Thor. For more information, refer to the
+Support Matrix
+.
+You have installed NVIDIA JetPack™ version 7.x on the Jetson platform. For more information, refer to the
+Support Matrix
+.
+You have ~32 GB free disk space on Jetson as required by the default containers and models. If you are deploying any Riva model intermediate representation (RMIR) models, the additional disk space required is ~32 GB plus the size of the RMIR models.
+You have enabled the following power modes on the Jetson platform. These modes activate all CPU cores and clock the CPU/GPU at maximum frequency for achieving the best performance.
+sudo
+nvpmodel
+-m
+0
+(
+Jetson
+Thor,
+mode
+MAXN
+)
+You have set the default runtime to
+nvidia
+on the Jetson platform by adding the following line in the
+/etc/docker/daemon.json
+file. Restart the Docker service using
+sudo
+systemctl
+restart
+docker
+after editing the file.
+"default-runtime"
+:
+"nvidia"
+Obtain a free trial license to install NVIDIA Riva. For more information, refer to the
+NVIDIA AI Enterprise Trial
+.
+Service Ports
+#
+The Riva Speech server listens on the following ports by default:
+Port
+Protocol
+Used For
+50051
+gRPC
+Riva gRPC APIs (used by Python clients such as
+transcribe_file.py
+and
+talk.py
+)
+9001
+HTTP/REST
+Riva HTTP REST endpoints (for example,
+/v1/audio/synthesize
+,
+/v1/audio/transcriptions
+)
+9000
+WebSocket
+Riva realtime WebSocket endpoints (for example,
+/v1/realtime?intent=synthesize
+,
+/v1/realtime?intent=transcription
+)
+Configure the port numbers in
+config.sh
+of the Quick Start scripts using these fields:
+riva_speech_api_port
+=
+"50051"
+riva_speech_api_http_port
+=
+"9001"
+riva_speech_api_realtime_port
+=
+"9000"
+Deployment Guide
+#
+There is one push-button deployment option to deploy Riva Speech AI, which uses
+pretrained models
+available from the NGC catalog:
+Local Docker:
+You can use the Quick Start scripts to set up a local workstation and deploy the Riva services using Docker. Continue with this guide to use the Quick Start scripts.
+In addition to using pretrained models, Riva Speech AI can run with fine-tune custom models using
+NVIDIA NeMo
+. Refer to the
+Model Development with NeMo
+section for details regarding the advanced option to create a model repository with NVIDIA NeMo.
+For detailed instructions on deploying and using specific Riva services, refer to the following quick start guides.
+Speech Recognition
+Speech Synthesis
+Translation

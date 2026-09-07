@@ -74,7 +74,7 @@
     "tamanho_time": 500,
     "classificacao_esperada": "AI-enabled",
     "documentos_urls": [
-        {"tipo": "site institucional", "titulo": "Sensor nº 1 em Monitoramento de Vibração e Ultrassom", "url": "https://get.tractian.com/cbm/sensor-vibracao-industrial?utm_campaign_id=12662878059&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CSEM%7CSA-BR%7CBRD%7CSTD-Tractian%7CALL&utm_term=tractian_e&utm_content=731759303940&hsa_acc=1812744788&hsa_cam=12662878059&hsa_grp=117619208062&hsa_ad=731759303940&hsa_src=g&hsa_tgt=kwd-900178865756&hsa_kw=tractian&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=12662878059&gclid=CjwKCAjw-rTUBhAiEiwADv8gBLA1d5SvbwCKrvqvHMbvRxwLiiNtoYiiTKH10d2hdTk4Q0_nhkD6dxoCddMQAvD_BwE", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Sensor nº 1 em Monitoramento de Vibração e Ultrassom", "url": "https://get.tractian.com/cbm/sensor-vibracao-industrial", "data_publicacao": null},
         {"tipo": "blog técnico", "titulo": "O papel da IoT na gestão da manutenção", "url": "https://tractian.com/blog/sistema-iot-para-gestao-da-manutencao", "data_publicacao": null},
         {"tipo": "notícia", "titulo": "Tractian capta US$ 120 mi em Série C", "url": "https://www.bloomberglinea.com.br/startups/rodadas-da-semana-tractian-de-iot-para-maquinas-industriais-capta-us-120-mi/", "data_publicacao": "2024-12-28"}
     ]
@@ -158,5 +158,645 @@
         {"tipo": "blog institucional", "titulo": "Conta Azul - Blog", "url": "https://contaazul.com/blog/", "data_publicacao": null},
         {"tipo": "notícia", "titulo": "Conta Azul entre startups brasileiras promissoras", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"}
     ]
-    }
+    },
+    {
+      "nome": "QI Tech",
+      "site": "https://qitech.com.br",
+      "setor": "Fintech (crédito e análise de risco)",
+      "estagio": "unicórnio",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Fintech que usa IA para análise de crédito e automação de operações financeiras, único novo unicórnio latino-americano de 2024.",
+      "ano_fundacao": 2018,
+      "tamanho_time": 800,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "QI Tech - Home", "url": "https://qitech.com.br/", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "QI Tech - Quem somos", "url": "https://qitech.com.br/quem-somos/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Elite da IA Brasileira - Forbes", "url": "https://forbes.com.br/forbes-tech/2026/01/elite-da-ia-brasileira-veja-as-10-startups-prontas-para-captacoes-de-ate-us-100-milhoes-em-2026/", "data_publicacao": "2026-01-07"}
+      ]
+    },
+    {
+      "nome": "Nagro",
+      "site": "https://nagro.com.br",
+      "setor": "Agtech (crédito rural)",
+      "estagio": "série A",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Fintech regulada pelo Banco Central que usa algoritmos de IA para aprovar crédito rural em até 48 horas, cruzando produtividade e dados climáticos.",
+      "ano_fundacao": 2020,
+      "tamanho_time": 60,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Nagro - Home", "url": "https://nagro.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "7 startups brasileiras de IA crescendo em 2026", "url": "https://alphacorp.ai/pt-br/blog/7-startups-brasileiras-de-inteligencia-artificial-que-estao-crescendo-em-2026", "data_publicacao": "2026-08-21"},
+        {"tipo": "notícia", "titulo": "Elite da IA Brasileira - Forbes", "url": "https://forbes.com.br/forbes-tech/2026/01/elite-da-ia-brasileira-veja-as-10-startups-prontas-para-captacoes-de-ate-us-100-milhoes-em-2026/", "data_publicacao": "2026-01-07"}
+      ]
+    },
+    {
+      "nome": "Arvo",
+      "site": "https://www.arvo.com.br",
+      "setor": "Healthtech (gestão de claims médicos)",
+      "estagio": "série A",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Healthtech de gestão de sinistros e claims médicos com maior Série A do setor no Brasil (R$106 milhões).",
+      "ano_fundacao": 2021,
+      "tamanho_time": 150,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Arvo - Home", "url": "https://businessmoment.com.br/arvo-summit-reune-liderancas-da-saude-para-discutir-o-impacto-real-da-inteligencia-artificial-no-setor/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Healthtechs Brasileiras - Mapa do Ecossistema", "url": "https://engenhariabiomedica.com/artigos/healthtechs-mapa-brasil", "data_publicacao": "2026-02-22"},
+        {"tipo": "notícia", "titulo": "10 Startups Brasileiras de IA que Vão Dominar 2026", "url": "https://openclaw.ia.br/blog/10-startups-brasileiras-ia-dominar-2026/", "data_publicacao": "2026-02-01"}
+      ]
+    },
+    {
+      "nome": "VAAS",
+      "site": "https://www.vaas.com.br",
+      "setor": "Fintech (análise de risco e fraude)",
+      "estagio": "série A",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Startup de análise de risco em transações financeiras que reduziu revisão manual de 15 minutos para 30 segundos usando IA.",
+      "ano_fundacao": 2021,
+      "tamanho_time": 50,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "notícia", "titulo": "10 Startups Brasileiras de IA que Vão Dominar 2026", "url": "https://openclaw.ia.br/blog/10-startups-brasileiras-ia-dominar-2026/", "data_publicacao": "2026-02-01"},
+        {"tipo": "site institucional", "titulo": "VAAS - Home", "url": "https://www.vaas.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Elite da IA Brasileira - Forbes", "url": "https://forbes.com.br/forbes-tech/2026/01/elite-da-ia-brasileira-veja-as-10-startups-prontas-para-captacoes-de-ate-us-100-milhoes-em-2026/", "data_publicacao": "2026-01-07"}
+      ]
+    },
+    {
+      "nome": "Gupy",
+      "site": "https://www.gupy.io",
+      "setor": "HRtech (recrutamento e seleção)",
+      "estagio": "série C",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "HRtech que usa a IA 'Gaia' para analisar milhões de currículos por segundo e ordenar candidatos por afinidade com a vaga.",
+      "ano_fundacao": 2015,
+      "tamanho_time": 500,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Gupy - Home", "url": "https://www.gupy.io/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "HR Techs - transformação de RH", "url": "https://www.fecomercio.com.br/noticia/hr-techs-startups-de-recursos-humanos-transformam-o-processo-de-admissao-gestao-de-ponto-e-beneficios-alem-dos-tramites-administrativos", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Saiba mais sobre HRTech", "url": "https://startups.com.br/negocios/hrtech/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Tako",
+      "site": "https://www.tako.com.br",
+      "setor": "HRtech (automação de folha de pagamento)",
+      "estagio": "seed",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "HRTech que utiliza agentes de inteligência artificial para automatizar processos de RH, principalmente folha de pagamento.",
+      "ano_fundacao": 2022,
+      "tamanho_time": 30,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Tako - Home", "url": "https://www.tako.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "As startups brasileiras de IA na mira de investidores", "url": "https://exame.com/inteligencia-artificial/dez-startups-brasileiras-de-ia-na-mira-de-investidores-em-2026/", "data_publicacao": "2026-07-16"},
+        {"tipo": "notícia", "titulo": "Saiba mais sobre HRTech", "url": "https://startups.com.br/negocios/hrtech/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Sensedia",
+      "site": "https://www.sensedia.com",
+      "setor": "Infraestrutura (APIs e integração)",
+      "estagio": "série B",
+      "localizacao": "Campinas, SP",
+      "descricao_curta": "Plataforma de integração de APIs e microsserviços com recursos de IA para otimizar conectividade e automação de processos.",
+      "ano_fundacao": 2007,
+      "tamanho_time": 400,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Sensedia - Home", "url": "https://www.sensedia.com/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "IA no Brasil - Startups Mais Promissoras", "url": "https://blog.toolzz.net/blog/news-startups-brasileiras-ia-contratacao-2026-29032d57/", "data_publicacao": "2026-05-02"},
+        {"tipo": "site institucional", "titulo": "Sensedia - Blog", "url": "https://www.sensedia.com/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Hilab",
+      "site": "https://www.hilab.com.br",
+      "setor": "Healthtech (diagnóstico via IoMT)",
+      "estagio": "série B",
+      "localizacao": "Recife, PE",
+      "descricao_curta": "Healthtech que usa dispositivos portáteis de 'Internet das Coisas Médicas' para realizar exames de sangue em farmácias com resultados em minutos.",
+      "ano_fundacao": 2017,
+      "tamanho_time": 200,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Hilab - Home", "url": "https://neofeed.com.br/startups/o-sangue-bom-da-hilab-comeca-a-colher-os-resultados-de-sua-expansao-global/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Top 18 Healthtechs e Saúde Digital 2026", "url": "https://pt.editorialge.com/healthtechs-brasil-2026/", "data_publicacao": "2026-02-12"},
+        {"tipo": "notícia", "titulo": "Healthtechs Brasileiras - Mapa do Ecossistema", "url": "https://engenhariabiomedica.com/artigos/healthtechs-mapa-brasil", "data_publicacao": "2026-02-22"}
+      ]
+    },
+    {
+      "nome": "Memed",
+      "site": "https://memed.com.br",
+      "setor": "Healthtech (prescrição médica digital)",
+      "estagio": "série B",
+      "localizacao": "Belo Horizonte, MG",
+      "descricao_curta": "Plataforma de prescrição médica digital usada amplamente por médicos brasileiros, com recursos de IA para sugestão de medicamentos.",
+      "ano_fundacao": 2015,
+      "tamanho_time": 180,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Memed - Home", "url": "https://memed.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Top 18 Healthtechs e Saúde Digital 2026", "url": "https://pt.editorialge.com/healthtechs-brasil-2026/", "data_publicacao": "2026-02-12"},
+        {"tipo": "site institucional", "titulo": "Memed - Blog", "url": "https://memed.com.br/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Apli",
+      "site": "https://www.apli.com.br",
+      "setor": "HRtech (recrutamento com IA)",
+      "estagio": "seed",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Startup especializada em recrutamento e seleção com uso de IA, otimizando a identificação dos candidatos mais adequados para cada vaga.",
+      "ano_fundacao": 2021,
+      "tamanho_time": 25,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Apli - Home", "url": "https://www.apli.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "IA no Brasil - Startups Mais Promissoras", "url": "https://blog.toolzz.net/blog/news-startups-brasileiras-ia-contratacao-2026-29032d57/", "data_publicacao": "2026-05-02"},
+        {"tipo": "site institucional", "titulo": "Apli - Sobre", "url": "https://www.apli.jobs/pt/home", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Cora",
+      "site": "https://www.cora.com.br",
+      "setor": "Fintech (conta digital e análise de dados)",
+      "estagio": "série B",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Fintech que oferece soluções de análise de dados financeiros para prevenção de fraude e concessão de crédito para PMEs.",
+      "ano_fundacao": 2019,
+      "tamanho_time": 300,
+      "classificacao_esperada": "AI-native",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Cora - Home", "url": "https://www.cora.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "IA no Brasil - Startups Mais Promissoras", "url": "https://blog.toolzz.net/blog/news-startups-brasileiras-ia-contratacao-2026-29032d57/", "data_publicacao": "2026-05-02"},
+        {"tipo": "site institucional", "titulo": "Cora - Blog", "url": "https://www.cora.com.br/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Sami",
+      "site": "https://www.samisaude.com.br",
+      "setor": "Healthtech (plano de saúde)",
+      "estagio": "série B",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Plano de saúde digital com modelo de equipes multidisciplinares (médico, enfermeiro, coordenador) e uso de dados para cuidado preventivo.",
+      "ano_fundacao": 2019,
+      "tamanho_time": 250,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Sami - Home", "url": "https://www.samisaude.com.br/quem-somos/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "HealthTech Brasil 2025 - 10 Startups", "url": "https://pt.editorialge.com/startups-healthtech-brasil-2025/", "data_publicacao": "2025-04-02"},
+        {"tipo": "site institucional", "titulo": "Sami - Blog", "url": "https://exame.com/negocios/startup-sami-planos-de-saude-capta-90-milhoes/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Beep Saúde",
+      "site": "https://www.beepsaude.com.br",
+      "setor": "Healthtech (vacinação e exames domiciliares)",
+      "estagio": "série B",
+      "localizacao": "Rio de Janeiro, RJ",
+      "descricao_curta": "Healthtech que oferece vacinação e exames domiciliares, com captação de R$100 milhões em rodada recente.",
+      "ano_fundacao": 2019,
+      "tamanho_time": 200,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Beep Saúde - Home", "url": "https://www.beepsaude.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Healthtechs Brasileiras - Mapa do Ecossistema", "url": "https://engenhariabiomedica.com/artigos/healthtechs-mapa-brasil", "data_publicacao": "2026-02-22"},
+        {"tipo": "notícia", "titulo": "HealthTech Brasil 2025 - 10 Startups", "url": "https://pt.editorialge.com/startups-healthtech-brasil-2025/", "data_publicacao": "2025-04-02"}
+      ]
+    },
+    {
+      "nome": "Conexa",
+      "site": "https://conexasaude.com.br",
+      "setor": "Healthtech (telemedicina B2B)",
+      "estagio": "série B",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Líder em telemedicina B2B na América Latina, fornecendo infraestrutura digital de teleinterconsulta para hospitais e operadoras.",
+      "ano_fundacao": 2017,
+      "tamanho_time": 180,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Conexa - Home", "url": "https://conexasaude.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Top 18 Healthtechs e Saúde Digital 2026", "url": "https://pt.editorialge.com/healthtechs-brasil-2026/", "data_publicacao": "2026-02-12"},
+        {"tipo": "site institucional", "titulo": "Conexa - Blog", "url": "https://conexasaude.com.br/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Oya",
+      "site": "https://www.oya.company",
+      "setor": "Femtech (fertilidade e saúde da mulher)",
+      "estagio": "seed",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Primeira femtech de destaque no Brasil focada em fertilidade, oferecendo diagnósticos sobre reserva ovariana.",
+      "ano_fundacao": 2020,
+      "tamanho_time": 40,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Oya - Home", "url": "https://www.oya.company/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Top 18 Healthtechs e Saúde Digital 2026", "url": "https://pt.editorialge.com/healthtechs-brasil-2026/", "data_publicacao": "2026-02-12"},
+        {"tipo": "notícia", "titulo": "Healthtechs Brasileiras - Mapa do Ecossistema", "url": "https://engenhariabiomedica.com/artigos/healthtechs-mapa-brasil", "data_publicacao": "2026-02-22"}
+      ]
+    },
+  {
+    "nome": "Sólides",
+    "site": "https://www.solides.com.br",
+    "setor": "HRtech (gestão de RH para PMEs)",
+    "estagio": "série B",
+    "localizacao": "Uberlândia, MG",
+    "descricao_curta": "Plataforma de gestão de recursos humanos para pequenas e médias empresas, com captação de US$100 milhões.",
+    "ano_fundacao": 2011,
+    "tamanho_time": 350,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "notícia", "titulo": "HRtechs - Distrito", "url": "https://www.distrito.me/blog/hrtech", "data_publicacao": "2025-12-30"},
+      {"tipo": "notícia", "titulo": "Saiba mais sobre HRTech", "url": "https://startups.com.br/negocios/hrtech/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "HR Techs - transformação de RH", "url": "https://www.fecomercio.com.br/noticia/hr-techs-startups-de-recursos-humanos-transformam-o-processo-de-admissao-gestao-de-ponto-e-beneficios-alem-dos-tramites-administrativos", "data_publicacao": null}
+    ]
+  },
+    {
+      "nome": "Starya AI",
+      "site": "https://www.starya.ai",
+      "setor": "Consultoria e plataforma de IA para negócios",
+      "estagio": "seed",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Plataforma e consultoria especializada em IA aplicada a negócios, ajudando empresas a incorporar automação e machine learning.",
+      "ano_fundacao": 2022,
+      "tamanho_time": 20,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Starya AI - Home", "url": "https://startups.com.br/branded-content/staryaai-lanca-plataforma-de-governanca-de-agentes-de-ia-e-projeta-triplicar-faturamento/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "8 startups brasileiras de IA para 2026", "url": "https://www.diarioinduscom.com.br/Noticias/872158/8_startups_brasileiras_de_ia_para_acompanhar_em_2026", "data_publicacao": "2025-05-11"},
+        {"tipo": "site institucional", "titulo": "Starya AI - Sobre", "url": "https://economiasa.com.br/blog/staryaai-como-a-inteligencia-artificial-esta-transformando-o-atendimento-em-saude-no-brasil/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Mevo",
+      "site": "https://www.mevo.com.br",
+      "setor": "Healthtech (gestão de clínicas)",
+      "estagio": "série A",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Healthtech de gestão de clínicas médicas, com captação de R$140 milhões, uma das maiores rodadas do setor.",
+      "ano_fundacao": 2020,
+      "tamanho_time": 150,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Mevo - Home", "url": "https://www.mevo.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Healthtechs Brasileiras - Mapa do Ecossistema", "url": "https://engenhariabiomedica.com/artigos/healthtechs-mapa-brasil", "data_publicacao": "2026-02-22"},
+        {"tipo": "site institucional", "titulo": "Mevo - Blog", "url": "https://www.mevo.com.br/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "QuintoAndar",
+      "site": "https://www.quintoandar.com.br",
+      "setor": "Proptech (aluguel de imóveis)",
+      "estagio": "unicórnio",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Plataforma de tecnologia focada em aluguel de imóveis, simplificando o processo de locação sem fiador com contrato digital.",
+      "ano_fundacao": 2012,
+      "tamanho_time": 3000,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "QuintoAndar - Home", "url": "https://www.quintoandar.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Startups Brasileiras: 6 Unicórnios e 9 Nomes", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"},
+        {"tipo": "site institucional", "titulo": "QuintoAndar - Sobre", "url": "https://www.quintoandar.com.br/newsroom/sobre/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Creditas",
+      "site": "https://www.creditas.com",
+      "setor": "Fintech (empréstimos com garantia)",
+      "estagio": "unicórnio",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Fintech de empréstimos que usa algoritmos para analisar documentos e conceder crédito com garantia de bens.",
+      "ano_fundacao": 2012,
+      "tamanho_time": 2500,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Creditas - Home", "url": "https://www.creditas.com/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Startups Brasileiras: 6 Unicórnios e 9 Nomes", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"},
+        {"tipo": "site institucional", "titulo": "Creditas - Blog", "url": "https://www.creditas.com/quem-somos", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Neoway",
+      "site": "https://www.neoway.com.br",
+      "setor": "Big Data / Business Intelligence",
+      "estagio": "consolidada",
+      "localizacao": "Florianópolis, SC",
+      "descricao_curta": "Usa Big Data como ferramenta para descobrir oportunidades mercadológicas, ajudando empresas a crescer com análise de dados.",
+      "ano_fundacao": 2002,
+      "tamanho_time": 500,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Neoway - Home", "url": "https://www.neoway.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Startups Brasileiras: 6 Unicórnios e 9 Nomes", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"},
+        {"tipo": "site institucional", "titulo": "Neoway - Blog", "url": "https://www.neoway.com.br/quem-somos", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "CargoX",
+      "site": "https://www.cargox.com.br",
+      "setor": "Logística (transporte de cargas)",
+      "estagio": "série B",
+      "localizacao": "Curitiba, PR",
+      "descricao_curta": "Empresa de tecnologia e transporte que conecta embarcadores a transportadores, apontada como futura unicórnio pela CB Insights.",
+      "ano_fundacao": 2016,
+      "tamanho_time": 300,
+      "classificacao_esperada": "AI-enabled",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "CargoX - Home", "url": "https://www.cargox.com.br/", "data_publicacao": null},
+        {"tipo": "notícia", "titulo": "Startups Brasileiras: 6 Unicórnios e 9 Nomes", "url": "https://contaazul.com/blog/startups-brasileiras-unicornios/", "data_publicacao": "2025-05-16"},
+        {"tipo": "site institucional", "titulo": "CargoX - Blog", "url": "https://mundologistica.com.br/noticias/cargox-se-inspira-em-modelos-da-google-e-da-ambev-para-equilibrar-gestao-e-processos", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Printi",
+      "site": "https://www.printi.com.br",
+      "setor": "Marketplace de impressão",
+      "estagio": "série B",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Plataforma online de impressão sob demanda para produtos personalizados e material gráfico.",
+      "ano_fundacao": 2014,
+      "tamanho_time": 300,
+      "classificacao_esperada": "non-AI",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Printi - Home", "url": "https://www.printi.com.br/", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Printi - Sobre", "url": "https://exame.com/pme/com-menos-impressoes-printi-adapta-grafica-para-vender-mascaras-a-r-2/", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Printi - Blog", "url": "https://www.printi.com.br/blog", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Wine",
+      "site": "https://www.wine.com.br",
+      "setor": "E-commerce de vinhos",
+      "estagio": "consolidada",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Clube e e-commerce de vinhos, um dos maiores do Brasil em curadoria e venda de vinhos.",
+      "ano_fundacao": 2008,
+      "tamanho_time": 400,
+      "classificacao_esperada": "non-AI",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Wine - Home", "url": "https://www.wine.com.br/", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Wine - Sobre", "url": "https://www.wine.com.br/institucional/sobre-a-wine", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Wine - Blog", "url": "https://neofeed.com.br/negocios/com-brindes-mais-camaradas-a-wine-ganhou-10-mil-novos-assinantes-na-pandemia/", "data_publicacao": null}
+      ]
+    },
+    {
+      "nome": "Ingresse",
+      "site": "https://www.ingresse.com",
+      "setor": "Ticketing de eventos",
+      "estagio": "consolidada",
+      "localizacao": "São Paulo, SP",
+      "descricao_curta": "Plataforma de venda de ingressos para shows, festas e eventos, adquirida pela Eventbrite.",
+      "ano_fundacao": 2013,
+      "tamanho_time": 150,
+      "classificacao_esperada": "non-AI",
+      "documentos_urls": [
+        {"tipo": "site institucional", "titulo": "Ingresse - Sobre", "url": "https://sobre.ingresse.com", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Ingresse - Wiki", "url": "https://pt.wikipedia.org/wiki/Ingresse", "data_publicacao": null},
+        {"tipo": "site institucional", "titulo": "Ingresse - Pesquisa", "url": "https://revistapegn.globo.com/Startups/noticia/2019/12/ingresse-recebe-investimento-de-r-90-milhoes-para-ir-alem-do-ingresso-online.html", "data_publicacao": null}
+      ]
+    },
+     {
+    "nome": "Aurea Digital",
+    "site": "https://www.aureadigital.com.br",
+    "setor": "Proptech (terrenos e incorporação com IA)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Proptech que usa inteligência artificial e geoprocessamento para conectar proprietários de terrenos e incorporadoras.",
+    "ano_fundacao": 2019,
+    "tamanho_time": 60,
+    "classificacao_esperada": "AI-native",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Aurea Digital - Home", "url": "https://www.aureadigital.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Saiba mais sobre Proptechs", "url": "https://startups.com.br/negocios/proptechs/", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Aurea Digital - Sobre", "url": "https://aureadigital.com.br/sobre-nos", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Onze",
+    "site": "https://www.onze.com.br",
+    "setor": "HRtech (previdência privada corporativa)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Plataforma digital de previdência privada corporativa e saúde financeira para empresas, reconhecida no LinkedIn Top Startups 2025.",
+    "ano_fundacao": 2020,
+    "tamanho_time": 80,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Onze - Home", "url": "https://www.onze.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "Onze - Blog", "url": "https://www.onze.com.br/blog", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Lina Open X",
+    "site": "https://www.linaopenx.com.br",
+    "setor": "Infraestrutura de Open Finance",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Infraestrutura de Open Finance que conecta dados financeiros via APIs, permitindo que empresas construam novos produtos sobre a rede financeira.",
+    "ano_fundacao": 2021,
+    "tamanho_time": 70,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Lina Open X - Sobre", "url": "https://aureadigital.com.br/sobre-nos", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "Lina Open X - Home", "url": "https://finsidersbrasil.com.br/reportagem-exclusiva-fintechs/lina-open-x-recebe-licenca-de-itp-negocia-aporte-e-preve-mais-do-que-dobrar-base-de-clientes/", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "PipeImob",
+    "site": "https://pipeimob.com",
+    "setor": "Proptech (CRM e automação para imobiliárias)",
+    "estagio": "série A",
+    "localizacao": "Porto Alegre, RS",
+    "descricao_curta": "Plataforma ponta-a-ponta para imobiliárias com CRM, automação de pós-venda/locação e geração de minutas inteligentes via IA.",
+    "ano_fundacao": 2023,
+    "tamanho_time": 45,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "PipeImob - Home", "url": "https://pipeimob.com.br", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Com locações e CRM, PipeImob quer ser ponta a ponta", "url": "https://startups.com.br/negocios/proptechs/com-locacoes-e-crm-pipeimob-quer-ser-ponta-a-ponta-das-imobiliarias/", "data_publicacao": "2026-03-25"},
+      {"tipo": "site institucional", "titulo": "PipeImob - Mídia", "url": "https://pipeimob.com/pt-br/midia", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "SuperFrete",
+    "site": "https://superfrete.com",
+    "setor": "Logtech (otimização de entregas)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Plataforma de logística que otimiza entregas para e-commerces e pequenos vendedores, reconhecida no LinkedIn Top Startups 2025.",
+    "ano_fundacao": 2019,
+    "tamanho_time": 90,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "SuperFrete - Home", "url": "https://superfrete.com/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "SuperFrete - Blog", "url": "https://superfrete.com/blog", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Leve Saúde",
+    "site": "https://www.levesaude.com.br",
+    "setor": "Healthtech (atenção primária)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Healthtech com rede própria de clínicas focada em atenção primária, reconhecida no LinkedIn Top Startups 2025.",
+    "ano_fundacao": 2020,
+    "tamanho_time": 100,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Leve Saúde - Home", "url": "https://www.levesaude.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "Leve Saúde - Blog", "url": "https://www.levesaude.com.br/blog", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Barte",
+    "site": "https://www.barte.com",
+    "setor": "Infraestrutura de pagamentos",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Fintech que oferece infraestrutura de pagamentos para médias e grandes empresas, reconhecida no LinkedIn Top Startups 2025.",
+    "ano_fundacao": 2021,
+    "tamanho_time": 60,
+    "classificacao_esperada": "non-AI",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Barte - Home", "url": "https://www.barte.com/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "Barte - Blog", "url": "https://www.barte.com/blog/inicio", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "VOLPI",
+    "site": "https://www.volpi.com.br",
+    "setor": "Proptech (financiamento imobiliário)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Startup que simplifica o financiamento imobiliário, reconhecida no LinkedIn Top Startups 2025.",
+    "ano_fundacao": 2021,
+    "tamanho_time": 50,
+    "classificacao_esperada": "non-AI",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "VOLPI - Home", "url": "https://www.volpi.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Lina Open X é destaque no LinkedIn Top Startups 2025", "url": "https://brasilinovador.com.br/lina-open-x-e-destaque-no-linkedin-top-startups-2025/", "data_publicacao": "2025-11-13"},
+      {"tipo": "site institucional", "titulo": "VOLPI - Sobre", "url": "https://www.volpi.com.br/sobre", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Sankhya",
+    "site": "https://www.sankhya.com.br",
+    "setor": "Software de gestão empresarial (ERP)",
+    "estagio": "consolidada (privada)",
+    "localizacao": "Uberlândia, MG",
+    "descricao_curta": "Empresa de software de gestão empresarial (ERP), adquiriu a Magis5 para centralizar vendas em marketplaces.",
+    "ano_fundacao": 1989,
+    "tamanho_time": 700,
+    "classificacao_esperada": "non-AI",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Sankhya - Home", "url": "https://www.sankhya.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Startups - Startupz", "url": "https://www.startupz.com.br/categoria/startups", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Sankhya - Blog", "url": "https://www.sankhya.com.br/blog", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Novo Saque",
+    "site": "https://www.novosaque.com.br",
+    "setor": "Fintech (crédito consignado)",
+    "estagio": "série A",
+    "localizacao": "Florianópolis, SC",
+    "descricao_curta": "Fintech catarinense de crédito consignado para trabalhadores CLT, com fundo exclusivo de aproximadamente R$100 milhões.",
+    "ano_fundacao": 2019,
+    "tamanho_time": 55,
+    "classificacao_esperada": "non-AI",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Novo Saque - Home", "url": "https://www.novosaque.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Startups - Startupz", "url": "https://www.startupz.com.br/categoria/startups", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Novo Saque - Sobre", "url": "https://tiinside.com.br/13/04/2026/novo-saque-projeta-r-2-bilhoes-em-credito-em-2026-e-adquire-startup-de-tecnologia-para-acelerar-expansao/", "data_publicacao": null}
+    ]
+  },
+  {
+    "nome": "Hubla",
+    "site": "https://www.hubla.com.br",
+    "setor": "Martech (economia de criadores de conteúdo)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Plataforma para criadores de conteúdo venderem produtos digitais, atingiu ponto de equilíbrio financeiro com crescimento 10x desde 2024.",
+    "ano_fundacao": 2021,
+    "tamanho_time": 90,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Hubla - Home", "url": "https://lp.hub.la", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Startups - Startupz", "url": "https://www.startupz.com.br/categoria/startups", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Hubla - Blog", "url": "https://help.hub.la/hc/pt-br/o-que-é-a-hubla", "data_publicacao": null}
+    ]
+  },
+    {
+    "nome": "Laura",
+    "site": "https://www.laura.care",
+    "setor": "Healthtech (monitoramento hospitalar com IA)",
+    "estagio": "série A",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Healthtech que aplica IA cognitiva ao monitoramento hospitalar e detecção precoce de riscos clínicos, como sepse, a partir de dados de prontuários eletrônicos.",
+    "ano_fundacao": 2019,
+    "tamanho_time": 70,
+    "classificacao_esperada": "AI-native",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Laura - Home", "url": "https://medicinasa.com.br/laura-care-edicao29/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "8 startups brasileiras de IA para acompanhar em 2026", "url": "https://businessmoment.com.br/8-startups-brasileiras-de-inteligencia-artificial-para-acompanhar-em-2026/", "data_publicacao": "2025-10-13"},
+      {"tipo": "notícia", "titulo": "8 startups brasileiras de IA - Diário Induscom", "url": "https://www.diarioinduscom.com.br/Noticias/872158/8_startups_brasileiras_de_ia_para_acompanhar_em_2026", "data_publicacao": "2025-05-11"}
+    ]
+  },
+  {
+    "nome": "Pontaltech",
+    "site": "https://www.pontaltech.com.br",
+    "setor": "Martech (mensageria e CPaaS com IA)",
+    "estagio": "série B",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Especialista em mensageria e automação conversacional, integra RCS, WhatsApp, SMS e e-mail; parceira da Meta, oferece CPaaS com chatbots e agentes de IA generativa.",
+    "ano_fundacao": 2003,
+    "tamanho_time": 250,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Pontaltech - Home", "url": "https://www.pontaltech.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "8 startups brasileiras de IA para acompanhar em 2026", "url": "https://businessmoment.com.br/8-startups-brasileiras-de-inteligencia-artificial-para-acompanhar-em-2026/", "data_publicacao": "2025-10-13"},
+      {"tipo": "site institucional", "titulo": "Pontaltech - Blog", "url": "https://pontaltech.com.br/conteudos/", "data_publicacao": null}
+    ]
+  },
+   {
+    "nome": "Sympla",
+    "site": "https://www.sympla.com.br",
+    "setor": "Eventos (ticketing)",
+    "estagio": "série B",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Plataforma de venda de ingressos e gestão de eventos, uma das líderes do setor no Brasil.",
+    "ano_fundacao": 2012,
+    "tamanho_time": 300,
+    "classificacao_esperada": "AI-enabled",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Sympla - Home", "url": "https://www.sympla.com.br/", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Sympla - Sobre", "url": "https://www.sympla.com.br/sobre-sympla", "data_publicacao": null},
+      {"tipo": "site institucional", "titulo": "Sympla - Blog", "url": "https://blog.sympla.com.br/", "data_publicacao": null}
+    ]
+  },
+    {
+    "nome": "Enjoei",
+    "site": "https://www.enjoei.com.br",
+    "setor": "Marketplace C2C (produtos usados)",
+    "estagio": "público (B3), pequeno porte",
+    "localizacao": "São Paulo, SP",
+    "descricao_curta": "Marketplace de compra e venda de produtos usados entre pessoas físicas, focado em moda e itens de segunda mão.",
+    "ano_fundacao": 2009,
+    "tamanho_time": 250,
+    "classificacao_esperada": "non-AI",
+    "documentos_urls": [
+      {"tipo": "site institucional", "titulo": "Enjoei - Home", "url": "https://www.enjoei.com.br/", "data_publicacao": null},
+      {"tipo": "notícia", "titulo": "Elo7 encerra operações e expõe colapso dos marketplaces de nicho", "url": "https://economicnewsbrasil.com.br/2026/05/11/elo7-encerra-operacoes-enjoei-marketplace-artesanato/", "data_publicacao": "2026-05-11"},
+      {"tipo": "site institucional", "titulo": "Enjoei - Sobre", "url": "https://www.enjoei.com.br/sobre", "data_publicacao": null}
+    ]
+  }
 ]

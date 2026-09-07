@@ -1,0 +1,72 @@
+[
+  {
+    "produto": "NVIDIA Inception",
+    "url": "https://www.nvidia.com/en-us/startups/",
+    "categoria": "programa para startups"
+  },
+  {
+    "produto": "NVIDIA NIM",
+    "url": "https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/",
+    "categoria": "deploy de modelos"
+  },
+  {
+    "produto": "NVIDIA NeMo",
+    "url": "https://www.nvidia.com/en-us/ai-data-science/products/nemo/",
+    "categoria": "treinamento e customização de LLMs"
+  },
+  {
+    "produto": "NeMo Guardrails",
+    "url": "https://github.com/NVIDIA/NeMo-Guardrails",
+    "categoria": "governança e segurança de agentes"
+  },
+  {
+    "produto": "NVIDIA Triton Inference Server",
+    "url": "https://developer.nvidia.com/triton-inference-server",
+    "categoria": "serving de modelos em produção"
+  },
+  {
+    "produto": "NVIDIA RAPIDS",
+    "url": "https://rapids.ai/",
+    "categoria": "aceleração de dados em GPU"
+  },
+  {
+    "produto": "NVIDIA Riva",
+    "url": "https://developer.nvidia.com/riva",
+    "categoria": "voz (ASR/TTS)"
+  },
+  {
+    "produto": "AI 5-Layer Cake (contexto NVIDIA)",
+    "url": "https://blogs.nvidia.com/blog/ai-5-layer-cake/",
+    "categoria": "contexto estratégico"
+  },
+    {
+    "produto": "NVIDIA NeMo Framework - Overview Técnico",
+    "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html",
+    "categoria": "customização e treinamento de LLMs"
+  },
+  {
+    "produto": "NVIDIA NIM - Get Started",
+    "url": "https://docs.nvidia.com/nim/large-language-models/latest/get-started/index.html",
+    "categoria": "deploy de modelos"
+  },
+  {
+    "produto": "NVIDIA NIM - FAQ Técnico",
+    "url": "https://docs.api.nvidia.com/nim/docs/faq",
+    "categoria": "deploy de modelos"
+  },
+  {
+    "produto": "NVIDIA Triton - Quickstart",
+    "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html",
+    "categoria": "serving de modelos em produção"
+  },
+  {
+    "produto": "NVIDIA Riva - Quick Start Guide",
+    "url": "https://docs.nvidia.com/deeplearning/riva/user-guide/docs/quick-start-guide.html",
+    "categoria": "voz (ASR/TTS)"
+  },
+  {
+    "produto": "NVIDIA Riva - ASR Overview",
+    "url": "https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html",
+    "categoria": "voz (ASR/TTS)"
+  }
+]

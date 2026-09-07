@@ -10,14 +10,19 @@ langchain-qdrant
 
 # Banco de dados estruturado
 psycopg[binary]
+psycopg2-binary
 sqlalchemy
 
 # Reranking (Semana 2)
 cohere
+rank-bm25
 
 # Utilidades
 python-dotenv
 pydantic
+langchain-huggingface
+sentence-transformers
+langchain-text-splitters
 
 # Frontend (deixa já instalado)
 streamlit

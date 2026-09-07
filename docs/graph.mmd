@@ -1,0 +1,9 @@
+flowchart LR
+    START([START]) --> query_planner[Query Planner]
+    query_planner --> retriever[Retriever SQL]
+    retriever --> classifier[Classifier]
+    classifier --> recommender[Recommender + RAG híbrido]
+    recommender --> validator[Evidence Validator]
+    validator -->|alerta e tentativa < 2| recommender
+    validator -->|válido ou segunda falha| briefing[Briefing Agent]
+    briefing --> END([END])

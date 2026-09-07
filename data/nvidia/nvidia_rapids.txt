@@ -1,0 +1,107 @@
+PRODUTO: NVIDIA RAPIDS
+CATEGORIA: aceleração de dados em GPU
+URL_FONTE: https://rapids.ai/
+---
+CUDA-X Data Science Libraries | NVIDIA Developer
+Topics
+AI
+Data Science
+CUDA-X Data Science Libraries
+Beginning August 11, 2026, the RAPIDS brand will transition to NVIDIA CUDA-X. All library functionality remains the same. Learn more about
+CUDA-X for Data Science
+.
+CUDA-X for Data Science
+CUDA-X™ is a
+collection of highly optimized, domain-specific libraries built on CUDA
+™ that includes a suite of open source libraries for accelerated data science. With 100+ integrations with open source libraries and tools in the data science ecosystem and zero-code-change APIs that accelerate popular PyData tools like pandas and scikit-learn, data scientists can easily accelerate their workflows with their existing tools.
+Download Now
+Documentation
+CUDA-X Libraries for Data Science
+CUDA-X libraries accelerate data and graph analytics, machine learning, and data visualizations. Data scientists can optimize for performance on single GPUs or scale up to distributed systems.
+cuDF: 20x Faster Polars
+cuDF is a toolkit that contains GPU-accelerated libraries to optimize fundamental DataFrame operations. It includes drop-in accelerators for popular DataFrame libraries and SQL engines, like Polars, pandas, and Apache Spark with no code changes required.
+Learn More About cuDF
+View Docs
+TAGS: pandas, polars, apache spark, dataframe, Python, C++
+cuML: 50x Faster Scikit-learn
+cuML is a GPU-accelerated machine learning library that optimizes 
+machine learning algorithms for execution on GPUs. It includes 
+accelerators that run machine learning algorithms in scikit-learn, UMAP,
+ and HDBSCAN with no code changes required.
+Learn More About cuML
+View Docs
+TAGS: scikit-learn, machine learning, Python, C++
+cuGraph: 48x Faster NetworkX
+cuGraph is a GPU-accelerated graph analytics library that optimizes graph algorithms for execution on GPUs to process millions of nodes without specialized software. It includes a zero-code-change accelerator for NetworkX.
+View Docs
+TAGS: NetworkX, graph, Python, C++
+cuxfilter
+Create interactive data visuals with multidimensional filtering of over 100-million-row tabular datasets.
+Get Started With cuxfilter
+Tags: dashboards, visualization, Python
+Dask
+Scale out GPU-accelerated data science pipelines for machine learning, XGBoost, and graph analytics to multiple nodes on Dask.
+Get Started on GitHub
+Tags: distributed computing, Python
+Apache Spark
+Accelerate Apache Spark data processing workflows on NVIDIA GPUs with the RAPIDS™ Accelerator for Apache Spark.
+Get Started With Spark
+TAGS: distributed computing, data processing, Python
+Other CUDA-X Libraries for Data Science
+See a complete list of libraries and tools.
+Check Out GitHub
+Install and Deploy in Your Environment
+Quick Install
+Deployment Guides
+Quick Install With conda
+1. If not installed, download and run the install script. This will install the latest miniforge:
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+2. Then install with:
+conda create -n rapids-26.08 -c rapidsai -c conda-forge rapids=26.08 python=3.14 'cuda-version>=13.0,<=13.3'
+Quick Install With pip
+pip install \
+  --extra-index-url=https://pypi.nvidia.com \
+  "cudf-cu13==26.8.*" \
+  "dask-cudf-cu13==26.8.*" \
+  "cuml-cu13==26.8.*" \
+  "cugraph-cu13==26.8.*"
+Deploy Locally
+Use this guide to install and build with conda, pip, Docker, or WSL2 on your local machine.
+Read the Local Deployment Guide
+Deploy on Platforms
+Deploy on your platform of choice, including Kubernetes, Databricks, and Google Colab.
+Read the Platforms Guide
+Deploy in the Cloud
+Run in AWS, Azure, GCP, and more.
+Read the Cloud Deployment Guide
+Data Science Learning Library
+Download the raw results data (JSON)
+The Accelerated Data Science Ecosystem
+Data practitioners in open source libraries, commercial software, and industries are driving innovation with CUDA-X.
+Open-Source Libraries
+Platforms
+Industry Adoption
+We're committed to simplifying, unifying, and accelerating data science for the open-source community.
+Use CUDA-X libraries in the most popular data science and machine learning platforms.
+Industry leaders are driving innovation with CUDA-X.
+bunq improved fraud detection accuracy by accelerating model training 100x and data processing 5x using NVIDIA cuDF and cuML libraries.
+Read Blog
+Capital One accelerated its financial and credit analysis pipelines with NVIDIA cuDF and cuML, improving model training by 100x.
+Watch On-Demand Session
+Checkout.com accelerated their data analysis workflows from minutes to seconds with NVIDIA cuDF.
+Read Blog
+LinkedIn developed DARWIN to enable faster data analysis on NVIDIA cuDF.
+Watch On-Demand Session
+TGen cut analysis time on 4-million-cell datasets from 10 hours to three minutes with RAPIDS-singlecell, built on NVIDIA cuML.
+Read Customer Story
+Join the Community
+Join the Accelerated Data Science Community on Slack
+Sign Up for the Data Science Newsletter
+Ethical AI
+NVIDIA believes Trustworthy AI is a shared responsibility and we have established policies and practices to enable development for a wide array of AI applications. When downloaded or used in accordance with our terms of service, developers should work with their supporting team to ensure their application meets requirements for the relevant industry and use case and addresses unforeseen product misuse.
+Please report security vulnerabilities or NVIDIA AI Concerns
+here
+.
+Download CUDA-X Libraries for Data Science today.
+Download
