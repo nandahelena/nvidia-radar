@@ -1,4 +1,4 @@
-# Checklist final de entrega — TAPI
+# Checklist de entrega
 
 ## Código e arquitetura
 
@@ -15,7 +15,7 @@
 - [x] 359 chunks carregados no índice lexical.
 - [x] Evidências NVIDIA com produto e URL.
 - [x] URLs dos documentos da startup preservadas para a classificação.
-- [x] Casos de avaliação registrados em `docs/evaluation.md`.
+- [x] Casos de avaliação, critérios e procedimento registrados em `docs/evaluation.md`.
 
 ## Interface
 
@@ -27,14 +27,14 @@
 
 ## Qualidade
 
-- [x] Seis testes automatizados passando.
+- [x] Seis testes automatizados passando no ambiente virtual.
 - [x] Sintaxe Python validada.
-- [x] `git diff --check` sem erros.
-- [x] Interface Streamlit carregada visualmente.
-- [ ] Executar a demo completa depois da renovação da quota Groq.
+- [x] `git diff --check` sem erros na última validação registrada.
+- [ ] Executar a demo completa com as chaves ativas e registrar o resultado em `docs/evaluation.md`.
+- [ ] Validar visualmente a interface na versão final.
 
-## Entrega manual
+## Antes de publicar
 
-- [ ] Gravar o vídeo de até 7 minutos usando `docs/video-script.md`.
 - [ ] Demonstrar uma recomendação com evidência e exportação.
-- [ ] Conferir prazo e enviar o repositório/vídeo.
+- [ ] Conferir se `.env` e credenciais não estão no commit.
+- [ ] Conferir prazo e publicar o repositório.

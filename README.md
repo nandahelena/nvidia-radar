@@ -32,18 +32,23 @@ O **NVIDIA Startup AI Radar** é uma aplicação multiagente que transforma uma 
 ## Arquitetura
 
 ```mermaid
-flowchart LR
-    A[Consulta] --> B[Query Planner]
+flowchart TB
+  A([Consulta]) --> B[Query Planner]
+  subgraph D[Descoberta e classificação]
     B --> C[Retriever PostgreSQL]
-    C --> D[Classifier]
-    D --> E[Retriever NVIDIA]
-    E --> F[BM25 + vetorial + RRF]
-    F --> G[Cohere Rerank]
-    G --> H[Recommender]
-    H --> I[Evidence Validator]
-    I -->|uma tentativa de correção| H
-    I --> J[Briefing Agent]
-    J --> K[Streamlit / exportação]
+    C --> E[Classifier]
+  end
+  subgraph K[Conhecimento NVIDIA]
+    F[Busca híbrida<br/>vetorial + BM25 + RRF] --> G[Cohere Rerank]
+    G --> H[Evidências com produto e URL]
+  end
+  E --> I[Recommender]
+  I --> F
+  H --> I
+  I --> J[Evidence Validator]
+  J -->|corrigir| I
+  J -->|validar| L[Briefing Agent]
+  L --> M([Streamlit / exportação])
 ```
 
 O fluxo é orquestrado com LangGraph. O Qdrant mantém os embeddings dos documentos NVIDIA; o PostgreSQL mantém startups e documentos de contexto. O modelo de linguagem é fornecido pelo Groq.
@@ -176,7 +181,6 @@ python debug_maritaca.py
 | `src/rag/test_retrieval.py` | Smoke test da coleção vetorial |
 | `clear_qdrant.py` | Remove a coleção local para uma reindexação limpa |
 | `docs/evaluation.md` | Casos de avaliação e resultados esperados |
-| `docs/video-script.md` | Roteiro de demonstração do projeto |
 
 ## Solução de problemas
 
@@ -215,8 +219,9 @@ python src/rag/index_nvidia.py
 
 - [Avaliação](docs/evaluation.md)
 - [Grafo da solução](docs/graph.mmd)
+- [Arquitetura detalhada](docs/architecture.md)
+- [Operação e manutenção](docs/operations.md)
 - [Checklist de entrega](docs/submission-checklist.md)
-- [Roteiro do vídeo](docs/video-script.md)
 
 ## Licença
 

@@ -1,9 +1,30 @@
-flowchart LR
-    START([START]) --> query_planner[Query Planner]
-    query_planner --> retriever[Retriever SQL]
-    retriever --> classifier[Classifier]
-    classifier --> recommender[Recommender + RAG híbrido]
-    recommender --> validator[Evidence Validator]
-    validator -->|alerta e tentativa < 2| recommender
-    validator -->|válido ou segunda falha| briefing[Briefing Agent]
-    briefing --> END([END])
+flowchart TB
+    start([Consulta do usuário]) --> planner
+
+    subgraph discovery[Descoberta e classificação]
+        direction LR
+        planner[Query Planner<br/>interpreta intenção e filtros] --> startup_retriever[Retriever<br/>PostgreSQL]
+        startup_retriever --> classifier[Classifier<br/>AI-native · AI-enabled · non-AI]
+    end
+
+    subgraph knowledge[Conhecimento NVIDIA]
+        direction LR
+        hybrid[Busca híbrida<br/>vetorial + BM25 + RRF] --> rerank[Cohere Rerank<br/>top_n]
+        rerank --> evidence[Trechos com produto<br/>e URL da fonte]
+    end
+
+    classifier --> recommender[Recommender<br/>cruza perfil e evidências]
+    recommender --> hybrid
+    evidence --> recommender
+    recommender --> validator[Evidence Validator<br/>whitelist e URLs]
+    validator -->|alerta e tentativa disponível| recommender
+    validator -->|válido ou limite atingido| briefing[Briefing Agent<br/>síntese e exportação]
+    briefing --> finish([Resultado no Streamlit])
+
+    classDef entry fill:#17210b,stroke:#76B900,color:#F2F5F7,stroke-width:2px;
+    classDef agent fill:#19212a,stroke:#76B900,color:#F2F5F7;
+    classDef service fill:#211b2a,stroke:#C084FC,color:#F2F5F7;
+    classDef output fill:#0f2922,stroke:#34D399,color:#F2F5F7,stroke-width:2px;
+    class start,finish entry;
+    class planner,startup_retriever,classifier,recommender,validator,briefing agent;
+    class hybrid,rerank,evidence service;
