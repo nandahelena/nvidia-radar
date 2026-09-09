@@ -9,10 +9,27 @@ PRODUTOS_NVIDIA_VALIDOS = {
 }
 
 
+_ROTULOS_SEGUINTES = (
+    "Justificativa técnica", "Justificativa de negócio", "Prioridade",
+    "Complexidade de implementação", "Próxima ação sugerida", "Evidências usadas",
+    "Tecnologia",
+)
+
+
 def extrair_tecnologias(texto_recomendacao):
-    """Extrai os nomes de tecnologia mencionados após 'Tecnologia:' no texto."""
-    padrao = r"Tecnologia:?\**\s*([^\n*]+)"
-    matches = re.findall(padrao, texto_recomendacao, re.IGNORECASE)
+    """Extrai os nomes de tecnologia mencionados após 'Tecnologia:' no texto.
+
+    O fallback textual (quando o structured output da Groq falha) nem sempre
+    separa os campos com quebra de linha, então o corte precisa considerar
+    também o próximo rótulo conhecido — não só '\\n' ou '*' — senão a
+    justificativa inteira é capturada como se fosse o nome da tecnologia.
+    """
+    limite = "|".join(re.escape(rotulo) for rotulo in _ROTULOS_SEGUINTES)
+    # Dois-pontos obrigatório: sem isso, "Tecnologia" batia dentro de
+    # palavras como "tecnologias" no meio de frases soltas do fallback
+    # textual, capturando a frase seguinte inteira como nome de produto.
+    padrao = rf"Tecnologia\s*:\s*\**\s*(.+?)(?=\n|\*|(?:{limite})\s*:|\Z)"
+    matches = re.findall(padrao, texto_recomendacao, re.IGNORECASE | re.DOTALL)
     return [m.strip() for m in matches]
 
 
@@ -34,8 +51,16 @@ def normalizar_nome(nome):
 
 
 def tecnologia_e_valida(nome):
+    """Verifica se algum produto da whitelist aparece no texto capturado.
+
+    Usa 'contém' em vez de igualdade exata porque o fallback textual da
+    Groq (quando o structured output falha) nem sempre isola o nome do
+    produto de frases ao redor — checar substring evita descartar uma
+    recomendação legítima só por causa de uma captura com texto a mais,
+    sem abrir mão de barrar produtos realmente inventados (ex.: "Arize").
+    """
     nome_normalizado = normalizar_nome(nome)
-    return nome_normalizado in PRODUTOS_NVIDIA_VALIDOS
+    return any(produto in nome_normalizado for produto in PRODUTOS_NVIDIA_VALIDOS)
 
 
 def evidence_validator_agent(state):

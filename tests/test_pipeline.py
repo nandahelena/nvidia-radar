@@ -27,6 +27,37 @@ class PipelineTest(unittest.TestCase):
         self.assertIn("NVIDIA NeMo", result["recomendacoes"]["Maritaca AI"])
         self.assertEqual(result["tentativas_validacao"], 1)
 
+    def test_validator_handles_fallback_text_without_line_breaks(self):
+        """Reproduz o fallback textual da Groq: sem quebra de linha entre
+        'Tecnologia:' e o próximo rótulo, o corte precisa parar no rótulo
+        seguinte, não engolir a justificativa inteira como nome do produto.
+        """
+        texto = (
+            "Tecnologia: NVIDIA NeMo NVIDIA NeMo permite customizar modelos "
+            "de linguagem para o caso da startup. "
+            "Justificativa técnica: alinhado ao uso de LLM próprio."
+        )
+        state = {"recomendacoes": {"Teste": texto}, "tentativas_validacao": 0}
+        result = evidence_validator_agent(state)
+        self.assertEqual(result["alertas_validacao"], {})
+        self.assertEqual(result["recomendacoes"]["Teste"], texto)
+
+    def test_validator_ignores_plural_word_without_colon(self):
+        """Reproduz o caso real da Oya: a palavra solta 'tecnologias' (sem
+        ser um rotulo de campo, sem dois-pontos) nao pode disparar uma
+        captura espuria que engole a frase seguinte inteira.
+        """
+        texto = (
+            "O programa NVIDIA Inception oferece diversas tecnologias de IA. "
+            "Ele permite que startups que ainda nao utilizam IA tenham "
+            "infraestrutura e suporte tecnico para comecar a desenvolver "
+            "solucoes baseadas em aprendizado profundo e inferencia em GPU."
+        )
+        state = {"recomendacoes": {"Oya": texto}, "tentativas_validacao": 0}
+        result = evidence_validator_agent(state)
+        self.assertEqual(result["alertas_validacao"], {})
+        self.assertEqual(result["recomendacoes"]["Oya"], texto)
+
     def test_validator_blocks_unknown_product(self):
         state = {
             "recomendacoes": {"Teste": "Tecnologia: Produto Inventado"},

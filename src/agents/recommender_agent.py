@@ -284,7 +284,7 @@ def recommender_agent(state):
             resposta = llm.invoke(prompt)
             recomendacoes[nome] = resposta.content.strip()
 
-        time.sleep(3)
+        time.sleep(15)
 
     return {"recomendacoes": recomendacoes, "evidencias": evidencias}
 

@@ -73,7 +73,7 @@ def classifier_agent(state):
         )
 
         resposta = llm.invoke(prompt_preenchido)
-        time.sleep(3)
+        time.sleep(15)
 
         classificacoes[startup["nome"]] = resposta.content.strip()
 
