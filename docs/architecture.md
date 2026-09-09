@@ -13,7 +13,7 @@ O fluxo completo está em [graph.mmd](graph.mmd). Há seis agentes LangGraph:
 | Classifier | Classifica o papel da IA no produto | Perfil e documentos da startup | AI-native, AI-enabled ou non-AI |
 | Recommender | Conecta necessidade técnica a produtos NVIDIA | Classificação e evidências | Recomendações estruturadas |
 | Evidence Validator | Impede produtos e fontes não suportados | Recomendações e whitelist | Alertas ou recomendações aprovadas |
-| Briefing Agent | Sintetiza a resposta para uso comercial | Estado validado | Briefing e exportação |
+| Briefing Agent | Sintetiza a resposta e calcula risco de comoditização | Estado validado | Briefing, risco e exportação |
 
 ## Camadas de dados
 
@@ -39,6 +39,20 @@ Os rankings são combinados com Reciprocal Rank Fusion. Os candidatos resultante
 As recomendações estruturadas carregam tecnologia, justificativas, prioridade, complexidade, próxima ação e evidências. O Evidence Validator compara os produtos contra a whitelist e mantém apenas URLs presentes nos documentos recuperados.
 
 Quando há alerta, o grafo retorna ao Recommender uma única vez. Se a segunda validação falhar, o fluxo segue para o briefing com o alerta explícito, evitando um loop infinito.
+
+## Diferencial estratégico: risco de comoditização
+
+O Briefing Agent adiciona uma camada de priorização que não depende de uma nova chamada ao LLM. A função `score_risco_commoditizacao` recebe a startup e sua classificação de IA, procura sinais textuais de dependência de capacidades genéricas e retorna `alto`, `médio` ou `baixo`.
+
+Regra atual:
+
+| Condição | Risco |
+| --- | --- |
+| Classificação `AI-native` ou pelo menos três sinais de IA na descrição | Alto |
+| Classificação `AI-enabled` ou pelo menos um sinal de IA na descrição | Médio |
+| Nenhuma das condições anteriores | Baixo |
+
+O score representa uma heurística de triagem estratégica. Ele não mede valuation, probabilidade financeira de sobrevivência nem prova que uma startup será substituída por OpenAI, Google ou Anthropic. Seu objetivo é destacar casos que merecem investigação comercial, diferenciação por dados ou workflows proprietários e eventual apoio da NVIDIA.
 
 ## Decisões e limites
 

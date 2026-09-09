@@ -7,6 +7,7 @@
 - [x] Extractor documentado como responsabilidade absorvida pelo Classifier.
 - [x] Diagrama em `docs/graph.mmd` e Mermaid no README.
 - [x] Saída estruturada Pydantic com fallback textual.
+- [x] Score heurístico de risco de comoditização documentado em `docs/differentiator.md`.
 
 ## RAG e evidências
 
@@ -24,6 +25,7 @@
 - [x] Mensagem para zero resultados.
 - [x] Mensagem específica para limite de quota do provedor.
 - [x] Exportação do briefing em Markdown.
+- [x] Briefing exportado inclui risco de comoditização por startup.
 
 ## Qualidade
 

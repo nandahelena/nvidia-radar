@@ -16,7 +16,15 @@
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Infra-Docker-2496ED?logo=docker&logoColor=white" alt="Docker"></a>
 </p>
 
-O **NVIDIA Startup AI Radar** é uma aplicação multiagente que transforma uma pergunta sobre startups em um briefing comercial fundamentado. O sistema encontra empresas na base local, classifica o papel da IA no produto e cruza cada caso com a documentação oficial da NVIDIA para sugerir tecnologias, prioridades, complexidade e evidências.
+O **NVIDIA Startup AI Radar** é uma aplicação multiagente que transforma uma pergunta sobre startups em um briefing comercial fundamentado. O sistema encontra empresas na base local, classifica o papel da IA no produto, estima o risco de comoditização e cruza cada caso com a documentação oficial da NVIDIA para sugerir tecnologias, prioridades, complexidade e evidências.
+
+## Diferencial estratégico
+
+O radar não responde apenas **qual tecnologia NVIDIA recomendar**. Ele também ajuda a responder **quais startups merecem ser nutridas e por quê**.
+
+Para cada startup analisada, o `Briefing Agent` calcula um nível de **risco de comoditização**: `alto`, `médio` ou `baixo`. A heurística procura sinais de dependência de capacidades genéricas de IA e considera a classificação de maturidade do produto. Assim, o briefing evidencia startups que podem ser pressionadas por funcionalidades nativas de grandes laboratórios, como OpenAI, Google e Anthropic, especialmente quando sua proposta parece próxima de um wrapper de LLM.
+
+Esse diferencial é adequado ao contexto do case: como a base de startups é compartilhada entre as entregas, o valor não está apenas em encontrar os mesmos registros, mas em gerar uma leitura estratégica adicional sobre **maturidade, risco competitivo e oportunidade de atuação da NVIDIA**. A regra e suas limitações estão detalhadas em [docs/differentiator.md](docs/differentiator.md).
 
 ## O que a aplicação faz
 
@@ -26,6 +34,7 @@ O **NVIDIA Startup AI Radar** é uma aplicação multiagente que transforma uma 
 - busca documentação NVIDIA com recuperação híbrida: vetorial, BM25 e Reciprocal Rank Fusion;
 - aplica Cohere Rerank para selecionar os trechos mais relevantes;
 - recomenda tecnologias NVIDIA com justificativas técnicas e de negócio;
+- calcula o risco de comoditização de cada startup para orientar priorização;
 - valida produtos e URLs citados antes de montar o briefing final;
 - apresenta resultados, métricas, evidências e exportação na interface Streamlit.
 

@@ -24,6 +24,7 @@ O índice lexical atual possui 359 chunks derivados dos documentos em `data/nvid
 | EVAL-06 | Consulta sem correspondência | Não quebra a interface | Exibe mensagem de zero resultados sem chamar a etapa de briefing |
 | EVAL-07 | Recomendação com produto inválido | Bloqueia produto fora da whitelist | `Evidence Validator` registra alerta e tenta recompor uma vez |
 | EVAL-08 | Exportação de briefing | Preserva síntese e evidências | O Markdown exportado abre e contém URLs permitidas |
+| EVAL-09 | Score de comoditização | Prioriza o risco competitivo por startup | O briefing exportado contém `Risco de comoditização: alto`, `médio` ou `baixo` para cada startup |
 
 ## Critérios de qualidade
 
@@ -36,6 +37,7 @@ Uma execução é aprovada quando:
 - a validação respeita o limite de uma recomposição;
 - a exportação produz Markdown legível;
 - uma consulta sem resultados recebe uma resposta explícita e útil.
+- cada startup do briefing exportado recebe um score de risco de comoditização.
 
 ## Procedimento manual
 
@@ -45,6 +47,7 @@ Uma execução é aprovada quando:
 4. Execute EVAL-06 com uma consulta deliberadamente inexistente.
 5. Use os testes automatizados para cobrir EVAL-07 e a filtragem de fontes.
 6. Exporte o briefing de EVAL-03 e valide o arquivo Markdown.
+7. Confirme em EVAL-09 que o risco aparece junto da classificação de cada startup.
 
 ## Resultados registrados
 
@@ -66,3 +69,4 @@ Esses resultados são uma referência funcional, não um snapshot imutável. Par
 | Recuperação | `src/rag/hybrid_retriever.py` e `src/agents/recommender_agent.py` | EVAL-03 a EVAL-05 |
 | Validação | `src/agents/evidence_validator_agent.py` | EVAL-07 |
 | Interface | `app.py` | EVAL-06 e EVAL-08 |
+| Priorização estratégica | `src/agents/briefing_agent.py` | EVAL-09 |
