@@ -1,13 +1,8 @@
-from langchain_groq import ChatGroq
-from dotenv import load_dotenv
-import os
+import time
 
-load_dotenv()
+from llm_factory import create_llm
 
-llm = ChatGroq(
-    model="openai/gpt-oss-20b",
-    api_key=os.getenv("GROQ_API_KEY")
-)
+llm = create_llm()
 
 PROMPT_TEMPLATE = """
 Você é um analista técnico especializado em avaliar o papel da Inteligência Artificial no produto de uma startup.
@@ -78,6 +73,7 @@ def classifier_agent(state):
         )
 
         resposta = llm.invoke(prompt_preenchido)
+        time.sleep(3)
 
         classificacoes[startup["nome"]] = resposta.content.strip()
 

@@ -16,7 +16,7 @@ from graph import build_graph
 
 st.set_page_config(
     page_title="NVIDIA Startup AI Radar",
-    page_icon=":material/radar:",
+    page_icon=os.path.join(os.path.dirname(__file__), "assets", "nvidia-radar-logo.svg"),
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -357,10 +357,26 @@ if buscar:
                 }
                 resultado = app.invoke(state_inicial)
             except Exception as e:
-                st.error(f"Ocorreu um erro ao processar a consulta: {e}")
+                mensagem = str(e)
+                if "429" in mensagem or "rate_limit" in mensagem.lower() or "tokens per day" in mensagem.lower():
+                    st.warning(
+                        "O provedor de linguagem atingiu o limite diário de tokens. "
+                        "A interface está funcionando, mas será necessário aguardar a "
+                        "renovação da quota ou usar outra chave/modelo."
+                    )
+                else:
+                    st.error(f"Ocorreu um erro ao processar a consulta: {e}")
 
         if resultado:
             startups = resultado["startups_encontradas"]
+
+            if not startups:
+                st.info(
+                    "Nenhuma startup encontrada para esses critérios. "
+                    "Tente uma consulta mais ampla, como 'startups AI-native' "
+                    "ou 'startups de saúde usando IA'."
+                )
+                st.stop()
 
             contagem = {"AI-native": 0, "AI-enabled": 0, "non-AI": 0}
             for s in startups:

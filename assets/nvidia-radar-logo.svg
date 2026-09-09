@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">NVIDIA Startup AI Radar</title>
+  <desc id="desc">Icone de radar verde sobre fundo escuro</desc>
+  <rect width="256" height="256" rx="48" fill="#0E1012"/>
+  <g fill="none" stroke="#76B900" stroke-width="10">
+    <circle cx="128" cy="128" r="82" opacity=".28"/>
+    <circle cx="128" cy="128" r="55" opacity=".5"/>
+    <path d="M128 128 190 66" stroke-linecap="round"/>
+    <path d="M128 128h-82" opacity=".7"/>
+  </g>
+  <circle cx="128" cy="128" r="13" fill="#76B900"/>
+  <circle cx="190" cy="66" r="9" fill="#76B900"/>
+</svg>

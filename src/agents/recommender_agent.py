@@ -1,6 +1,8 @@
 import cohere
 import logging
-from langchain_groq import ChatGroq
+import time
+from pydantic import BaseModel, Field
+from llm_factory import create_llm
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from dotenv import load_dotenv
@@ -9,10 +11,7 @@ from rag.hybrid_retriever import buscar_candidatos_hibridos
 
 load_dotenv()
 
-llm = ChatGroq(
-    model="openai/gpt-oss-20b",
-    api_key=os.getenv("GROQ_API_KEY")
-)
+llm = create_llm()
 
 embeddings = HuggingFaceEmbeddings(
     model_name="all-MiniLM-L6-v2"
@@ -27,6 +26,59 @@ qdrant = QdrantVectorStore.from_existing_collection(
 co = cohere.ClientV2(api_key=os.getenv("COHERE_API_KEY"))
 
 logger = logging.getLogger(__name__)
+
+
+class RecomendacaoEstruturada(BaseModel):
+    tecnologia: str
+    justificativa_tecnica: str
+    justificativa_negocio: str
+    prioridade: str
+    complexidade_implementacao: str
+    proxima_acao_sugerida: str
+    evidencias_usadas: list[str] = Field(default_factory=list)
+
+
+class RespostaRecomendacoesEstruturada(BaseModel):
+    recomendacoes: list[RecomendacaoEstruturada] = Field(default_factory=list)
+
+
+def formatar_recomendacoes_estruturadas(resposta, fontes_permitidas):
+    """Converte o schema Pydantic para o formato textual consumido pela UI."""
+    if isinstance(resposta, dict):
+        resposta = RespostaRecomendacoesEstruturada.model_validate(resposta)
+
+    blocos = []
+    urls_permitidas = {fonte["url"] for fonte in fontes_permitidas if fonte.get("url")}
+    for item in resposta.recomendacoes[:2]:
+        evidencias = [
+            evidencia for evidencia in item.evidencias_usadas
+            if any(url in evidencia for url in urls_permitidas)
+        ]
+        if not evidencias:
+            evidencias = [
+                f"{fonte['produto']} — {fonte['url']}"
+                for fonte in fontes_permitidas[:2]
+                if fonte.get("url")
+            ]
+        blocos.append(
+            "\n".join([
+                f"Tecnologia: {item.tecnologia}",
+                f"Justificativa técnica: {item.justificativa_tecnica}",
+                f"Justificativa de negócio: {item.justificativa_negocio}",
+                f"Prioridade: {item.prioridade}",
+                f"Complexidade de implementação: {item.complexidade_implementacao}",
+                f"Próxima ação sugerida: {item.proxima_acao_sugerida}",
+                f"Evidências usadas: {'; '.join(evidencias)}",
+            ])
+        )
+    if not blocos:
+        return "Não foi possível identificar uma recomendação suficientemente fundamentada."
+    return "\n\n---\n\n".join(blocos)
+
+
+def erro_de_quota(exc):
+    mensagem = str(exc).lower()
+    return "429" in mensagem or "rate_limit" in mensagem or "tokens per day" in mensagem
 
 
 def buscar_documentos_relevantes(query, k_inicial=30, top_n_final=4):
@@ -153,6 +205,9 @@ fornecidos.
 
 Use somente os links presentes nos trechos recuperados e inclua essa seção
 para cada tecnologia recomendada.
+
+Responda usando exatamente os campos do schema estruturado fornecido pelo
+sistema. Não inclua tecnologias que não possam ser justificadas.
 """
 
 
@@ -212,11 +267,24 @@ def recommender_agent(state):
                 "Não repita esses nomes; use apenas produtos NVIDIA evidenciados nos trechos."
             )
 
-        # 5. Chama o LLM
-        resposta = llm.invoke(prompt)
+        # 5. Chama o LLM com schema Pydantic; mantém fallback compatível com
+        # modelos/provedores que não suportem structured output.
+        try:
+            resposta_estruturada = llm.with_structured_output(
+                RespostaRecomendacoesEstruturada
+            ).invoke(prompt)
+            recomendacoes[nome] = formatar_recomendacoes_estruturadas(
+                resposta_estruturada,
+                evidencias[nome],
+            )
+        except Exception as exc:
+            if erro_de_quota(exc):
+                raise
+            logger.exception("Structured output indisponível para %s; usando fallback textual", nome)
+            resposta = llm.invoke(prompt)
+            recomendacoes[nome] = resposta.content.strip()
 
-        # 6. Guarda a recomendação
-        recomendacoes[nome] = resposta.content.strip()
+        time.sleep(3)
 
     return {"recomendacoes": recomendacoes, "evidencias": evidencias}
 

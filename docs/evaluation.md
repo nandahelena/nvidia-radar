@@ -16,6 +16,12 @@
 4. Repetir uma consulta com produto inválido simulado para verificar o alerta do Evidence Validator.
 5. Exportar o briefing e abrir o `.md` gerado.
 
-## Resultado conhecido
+## Resultado validado
+
+Os três testes foram executados no índice local com `k=30` e Cohere `top_n=5`:
+
+- LLM próprio em português → `NVIDIA NeMo` em primeiro lugar.
+- Deploy de LLM com baixa latência → `NVIDIA NIM` em primeiro lugar.
+- Voz com ASR/TTS → `NVIDIA Riva` aparece entre os primeiros resultados.
 
 Para a Maritaca AI, a busca híbrida recupera 359 chunks no índice local, mantém o case da Writer entre os candidatos e o Cohere o posiciona em primeiro lugar (`0.1715` na execução validada). O agente completo recomendou NVIDIA NeMo com prioridade alta.

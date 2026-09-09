@@ -1,4 +1,3 @@
-from typing import TypedDict
 import psycopg2
 from dotenv import load_dotenv
 import os
@@ -7,12 +6,7 @@ import os
 load_dotenv()
 
 db_url = os.getenv("DATABASE_URL")
-
-class RadarState(TypedDict):
-    consulta: str
-    startups_encontradas: list
-    classificacoes: dict
-    recomendacoes: dict
+MAX_STARTUPS_POR_RODADA = int(os.getenv("MAX_STARTUPS_POR_RODADA", "8"))
 
 def retriever_agent(state):
     # Pega os critérios definidos pelo query_planner, usando um dict vazio como fallback
@@ -61,6 +55,13 @@ def retriever_agent(state):
                 {"id": l[0], "nome": l[1], "setor": l[2], "descricao_curta": l[3]}
                 for l in linhas
             ]
+
+            # Trava de segurança: mesmo que a consulta seja ampla (ou vazia) e
+            # bata em muitas startups, uma rodada nunca processa mais que
+            # MAX_STARTUPS_POR_RODADA no classifier/recommender, o que evita
+            # estourar a cota diária da Groq numa única execução.
+            if len(startups) > MAX_STARTUPS_POR_RODADA:
+                startups = startups[:MAX_STARTUPS_POR_RODADA]
 
             # 4. Buscando os documentos associados a cada startup encontrada
             for startup in startups:

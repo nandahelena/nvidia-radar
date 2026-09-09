@@ -1,15 +1,8 @@
-from langchain_groq import ChatGroq
-from dotenv import load_dotenv
-import os
+from llm_factory import create_llm
 import json
 import re
 
-load_dotenv()
-
-llm = ChatGroq(
-    model="openai/gpt-oss-20b",
-    api_key=os.getenv("GROQ_API_KEY")
-)
+llm = create_llm()
 
 PROMPT_TEMPLATE = """
 Você é um planejador de consultas especializado em startups. 
